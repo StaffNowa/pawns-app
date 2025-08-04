@@ -5,11 +5,10 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
-class PointsTransaction extends Model
+class UserWallet extends Model
 {
     protected $fillable = [
-        'user_id',
-        'points',
+        'balance',
     ];
     public function user(): BelongsTo
     {
